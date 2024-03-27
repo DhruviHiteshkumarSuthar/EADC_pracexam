@@ -3,7 +3,7 @@ const app = express();
 
 app.get('/', (req, res) => {
   const currentDateTime = new Date().toLocaleString();
-  res.send(`Hello! I am Dhruvi. Current date and time: ${currentDateTime}`);
+  res.send(`<h1>Hello! I am Dhruvi. Current date and time: ${currentDateTime}</h1>`);
 });
 
 const port = process.env.PORT || 3000;
